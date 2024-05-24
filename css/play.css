@@ -7,7 +7,7 @@
 
 body {
   font-family: sans-serif;
-  /*background-image: url('../css/fondo2.png');*/
+  background-image: url('../css/fondo-tablero4.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -100px;
@@ -17,19 +17,19 @@ body {
 
   position: absolute;
   width: 800px;
-  height: 350px;
+  height: 400px;
   top: 200px;
   left: calc(50% - 400px);
   background: #282854;
   padding: 40px 20px 20px 20px;
-  border: 10px solid rgb(252, 155, 11);
+  border: 10px solid rgb(0, 51, 102);
 }
 
 .tablero .respuestas {
   margin-top: 15px;
   width: 740px;
   border: 0;
-  color: rgb(252, 155, 11);
+  color: rgb(255, 255, 255);
   text-transform: uppercase;
   font-family: Arial;
   font-weight: bold;
@@ -51,7 +51,7 @@ body {
 .marcador {
   padding-left: calc(50% - 400px);
   font-family: 'digital display tfb';
-  color: rgb(252, 155, 11);
+  color: rgb(255, 255, 255);
   text-align: center;
 }
 

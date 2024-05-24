@@ -19,7 +19,19 @@
 
     <div><a href="#" class="control" ng-click="sendInicio()">Inicio juego</a></div>
     <br>
-    <div><a href="#" class="control" ng-click="sendInicio()">Repetida</a></div>
+      <!-- Botón para reproducir el sonido -->
+  <button onclick="reproducirSonido()" class="control">Repetida</button>
+
+    <audio id="miSonido">
+      <source src="audios/repetida.mp3" type="audio/mp3">
+    </audio>
+  <!-- JavaScript -->
+  <script>
+      function reproducirSonido() {
+          var sonido = document.getElementById("miSonido");
+          sonido.play();
+      }
+  </script>
    
 
     <h2 style="color: white;">Rondas</h2>
