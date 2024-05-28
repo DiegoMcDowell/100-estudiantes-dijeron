@@ -7,7 +7,7 @@
 
 body {
   font-family: sans-serif;
-  background-image: url('../css/fondo-tablero4.png');
+  background-image: url('../css/fondo-tablero7.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -100px;
@@ -22,7 +22,7 @@ body {
   left: calc(50% - 400px);
   background: #282854;
   padding: 40px 20px 20px 20px;
-  border: 10px solid rgb(0, 51, 102);
+  border: 10px solid rgb(255, 255, 255);
 }
 
 .tablero .respuestas {
@@ -40,11 +40,11 @@ body {
   padding-bottom: 18px;
 }
 
-.tablero .respuestas tr td:nth-child(1) {
+.tablero .respuestas tr td:nth-child(2) {
   text-align: left;
 }
 
-.tablero .respuestas tr td:nth-child(2) {
+.tablero .respuestas tr td:nth-child(3) {
   text-align: right;
 }
 
