@@ -22,8 +22,8 @@
         <table class="respuestas">
           <tr ng-repeat="respuesta in preguntaActual.respuestas">
             <td>
-              <span ng-show="respuesta.opened" class="animated flipInX">{{ ($index + 1) + '. ' + respuesta.nombre
-                }}</span>
+              <span ng-show="respuesta.opened" style="font-size: 20px; text-align: center;">{{ preguntaActual.nombre }} </span>
+              <span ng-show="respuesta.opened" class="animated flipInX">{{ ($index + 1) + '. ' + respuesta.nombre}}</span>
               <span ng-show="!respuesta.opened">{{ ($index + 1) + '. ' }} __________________________________</span>
             </td>
             <td style="width: 50px;">
@@ -45,29 +45,8 @@
     <div class="strike" ng-show="strikeActive && robo">
       <span>X</span>
     </div>
+    
 
-    <div class="tp-caption tp-resizeme rs-parallaxlevel-2"
-    data-frames='[{"delay":500,"speed":1000,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"power3.inOut"},
-    {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-    data-visibility="['on','on','on','on']"
-    data-blendmode="multiply"
-    data-x="['center','center','center','center']"
-    data-y="['bottom','bottom','bottom','bottom']"
-    data-hoffset="['0','0','0','0']"
-    data-voffset="['130','0','-120','-320']"
-    data-width="['auto','auto','auto','auto']"
-    data-height="['auto','auto','auto','auto']"
-    data-whitespace="['normal','normal','nowrap','normal']"
-    data-paddingtop="[0,0,0,0]"
-    data-paddingright="[0,0,0,0]"
-    data-paddingbottom="[0,0,0,0]"
-    data-paddingleft="[0,0,0,0]"
-    data-type="image"
-    data-basealign="slide"
-    data-responsive_offset="on"
-    data-responsive="on">
-   <img src="images/demo-pizza-parlor-slider-11.jpg" alt="pizza" style="opacity: 0.06;">
-    </div>
   </div>
   <script src="libs/angular.min.js"></script>
   <script src="scripts/datos.js"></script>
