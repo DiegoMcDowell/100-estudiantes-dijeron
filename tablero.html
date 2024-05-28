@@ -21,8 +21,8 @@
       <center>
         <table class="respuestas">
           <tr ng-repeat="respuesta in preguntaActual.respuestas">
+            <h2 style="color: white;" id="preguntaTexto">{{ preguntaActual.nombre }}</h2>
             <td>
-              <span ng-show="respuesta.opened" style="font-size: 20px; text-align: center;">{{ preguntaActual.nombre }} </span>
               <span ng-show="respuesta.opened" class="animated flipInX">{{ ($index + 1) + '. ' + respuesta.nombre}}</span>
               <span ng-show="!respuesta.opened">{{ ($index + 1) + '. ' }} __________________________________</span>
             </td>
@@ -51,6 +51,7 @@
   <script src="libs/angular.min.js"></script>
   <script src="scripts/datos.js"></script>
   <script src="scripts/play.js"></script>
+  <script src="/scripts/pregunta.js"></script>
 </body>
 
 

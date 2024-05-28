@@ -23,7 +23,7 @@ app.controller('JuegoCtrl', ['$scope', '$timeout', '$rootScope', function ($scop
   var audioRespuestaCorrecta = new Audio('audios/correcto.mp3');
   var audioRespuestaIncorrecta = new Audio('audios/incorrecto.mp3');
   var audioGana = new Audio('audios/gana.wav');
-  var audioRepetida = new Audio ('audios/repetida.mp3')
+
 
   $scope.openRespuesta = function (index) {
     var respuesta = $scope.preguntaActual.respuestas[index];
@@ -95,10 +95,6 @@ app.controller('JuegoCtrl', ['$scope', '$timeout', '$rootScope', function ($scop
 
   $scope.iniciar = function () {
     audioEntrada.play();
-  }
-
-  $scope.iniciar = function(){
-    audioRepetida.play();
   }
 
 
